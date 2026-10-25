@@ -900,7 +900,7 @@
 
 .event-types-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
 }
 
@@ -922,9 +922,14 @@
   transform: translateY(-3px);
 }
 
+
 .event-type-icon {
-  font-size: 20px;
+  width: 28px;
+  height: 28px;
+  color: var(--color-primary);
+  flex-shrink: 0;
 }
+
 /*  Responsive: Event Types - Tablet & Small Laptop (1024px)  */
 @media (max-width: 1024px) {
   .event-types-container {
