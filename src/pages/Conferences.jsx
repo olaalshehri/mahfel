@@ -128,16 +128,13 @@ function Conferences() {
 
         <div className="conferences-hero-title">
           <h4>قريبًا | مؤتمر الأمن السيبراني</h4>
-
           <h1>مستقبل رقمي أكثر أمانًا</h1>
-
           <p>حيث تلتقي العقول والخبرات لصناعة مستقبل رقمي آمن.</p>
 
           {timeLeft && (
             <div className="conference-countdown">
               <p>الوقت المتبقي لانطلاق المؤتمر</p>
 
-              /* Create one box for each time unit */
               <div className="countdown-boxes">
                 {[
                   { value: timeLeft.days, label: "يوم" },
